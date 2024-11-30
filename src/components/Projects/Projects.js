@@ -1,13 +1,15 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import twejj from "../../Assets/Projects/twejj.svg";
+import Prayer from "../../Assets/Projects/Prayer.svg";
+import con10der from "../../Assets/Projects/con10der.png";
+import clipa from "../../Assets/Projects/clipa.png";
+import Nayesh from "../../Assets/Projects/Nayesh.svg";
+import villagehood from "../../Assets/Projects/villagehood.png";
+import eventsGear from "../../Assets/Projects/eventsGear.png";
+import BusinessesListing from "../../Assets/Projects/BusinessesListing.svg";
 
 function Projects() {
   return (
@@ -23,21 +25,21 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={clipa}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
+              title="Clipa App"
+              description="The Christmas Light Installation app revolutionizes the holiday decorating industry by providing a comprehensive and user-friendly platform for professionals. This innovative tool simplifies the entire process, from initial setup and subscription selection to creating detailed estimates and managing customer interactions. With features like customizable calculations, photo editing and markup, and team collaboration tools, the app empowers users to deliver precise and visually appealing estimates."
               ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={BusinessesListing}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Businesses Listing App"
+              description="The objective of the app is to allow contractors, service providers, etc to sign up and pay a yearly or monthly fee to be advertised on the app. The users (people searching for contractors) will be able to sign up and use the app for free. It will have multiple categories centered around the marine industry i.e., captains, mates, marinas, contractors, etc. There will be all kinds of services from upholstery to paint repair etc. The user can message the contractor directly through the app but only message, not book service."
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -45,46 +47,68 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={con10der}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
+              title="Con10Der App"
+              description="The app connects college athletes and corporations for sponsorships using a Tinder-like swipe feature. Athletes sign up with .edu emails, showcasing achievements, while corporations highlight sponsorship goals. A matching algorithm pairs users based on interests. Features include in-app messaging, feedback, and digital contract signing. It ensures NCAA compliance and user verification. Initially free, the app provides tools for negotiation, contract templates, and secure matchmaking, streamlining sponsorship opportunities between athletes and businesses."
               ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={twejj}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="TTwej On Demand App"
+              description="The on-demand app allows users to book services from professionals across various categories. Users can sign up, verify with OTP, browse and filter services, and book based on location or type (business or individual). Features include saved payment methods, ratings, reviews, chat, and location navigation. Businesses and individuals manage bookings, view earnings, and withdraw payments. The admin panel oversees user management, professional approvals, earnings, and analytics. The app simplifies service discovery, booking, and communication for both customers and service providers."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard 
+              imgPath={Prayer}
+              isBlog={false}
+              title="Prayer App"
+              description="The Prayer app offers personalized prayer reminders, accurate prayer timings, and events managed by the admin. It includes video call features, allowing users to connect with instructors for spiritual classes. Instructors can upload videos for users to access on their profiles. The app also enables secure donations, community engagement, and curated news updates. Designed for both Android and iPhone platforms, it ensures user-friendly navigation, technical reliability, and supports spiritual growth by offering educational resources and fostering community interaction."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={eventsGear} 
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Eevents Gear App"
+              description="The app will have two user types: customers and vendors. Customers can browse categories like events, services, and equipment, view vendor profiles, and chat with them. Vendors can register, upload service details, and share social media links, requiring a subscription for listing. The app will be developed using Flutter and Node.js, hosted on AWS, with code managed on GitHub. Weekly check-ins with the client will occur via Fiverr and Zoom. An admin dashboard will manage both user interfaces and vendor subscriptions."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={villagehood}
+              isBlog={false}
+              title="Villagehood App"
+              description="The app allows users to view photos shared by others, search by location, or browse nearby. Users can sign up or log in to post photos and view posts with a username and location. Swiping up on photos notifies the owner, but only premium subscribers can access contact details and message others. Profiles include username, email, phone number, password, and profile picture. Subscriptions enable users to connect, ensuring privacy for contact information."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={Nayesh}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Nayesh App"
+              description="The app enables users to book services across various categories, available at either the user’s or supplier’s location (e.g., babysitting or laundry). Service providers must upload credentials for approval, except for tasks like pet sitting or hosting playgroups. A unified app serves both users and providers with tailored interfaces. Payments include a 10% app fee (e.g., $20 service + $2 fee = $22 total) and are processed via Stripe. Providers and users can seamlessly connect through the platform. Attached are logo ideas, fonts, branding colors, app design, and the."
+              ghLink="https://github.com/soumyajit4419/Editor.io"
+              demoLink="https://editor.soumya-jit.tech/"
             />
           </Col>
         </Row>
