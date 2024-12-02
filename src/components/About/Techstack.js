@@ -18,7 +18,7 @@ import {
   SiTailwindcss
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import { TbBrandHtml5, TbBrandCss3, TbBrandRedux, TbBrandNextjs } from "react-icons/tb";
+import { TbBrandHtml5, TbBrandCss3, TbBrandRedux } from "react-icons/tb";
 
 function Techstack() {
   return (
