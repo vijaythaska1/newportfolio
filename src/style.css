@@ -208,6 +208,10 @@ button:focus {
   width: 100%;
 }
 
+.navbar-brand {
+  font-size: 2.00rem !important;
+}
+
 /* --------- */
 /* Home section */
 /* --------- */
