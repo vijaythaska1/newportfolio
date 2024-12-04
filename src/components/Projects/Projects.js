@@ -148,6 +148,28 @@ function Projects() {
               // demoLink="#"
             />
           </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Nayesh}
+              isBlog={false}
+              title="Nayesh App"
+              description="The app enables users to book services across various categories, available at either the user’s or supplier’s location (e.g., babysitting or laundry). Service providers must upload credentials for approval, except for tasks like pet sitting or hosting playgroups. A unified app serves both users and providers with tailored interfaces. Payments include a 10% app fee (e.g., $20 service + $2 fee = $22 total) and are processed via Stripe. Providers and users can seamlessly connect through the platform. Attached are logo ideas, fonts, branding colors, app design, and the."
+              ghLink="/PrivateContent"
+              // demoLink="#"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Nayesh}
+              isBlog={false}
+              title="Nayesh App"
+              description="The app enables users to book services across various categories, available at either the user’s or supplier’s location (e.g., babysitting or laundry). Service providers must upload credentials for approval, except for tasks like pet sitting or hosting playgroups. A unified app serves both users and providers with tailored interfaces. Payments include a 10% app fee (e.g., $20 service + $2 fee = $22 total) and are processed via Stripe. Providers and users can seamlessly connect through the platform. Attached are logo ideas, fonts, branding colors, app design, and the."
+              ghLink="/PrivateContent"
+              // demoLink="#"
+            />
+          </Col>
         </Row>
       </Container>
     </Container>

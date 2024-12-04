@@ -26,8 +26,7 @@ function ResumeNew() {
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Resume
           </Button>
         </Row>
 
