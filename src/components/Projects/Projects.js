@@ -13,6 +13,8 @@ import Nayesh from "../../Assets/Projects/Nayesh.svg";
 import villagehood from "../../Assets/Projects/villagehood.png";
 import eventsGear from "../../Assets/Projects/eventsGear.png";
 import BusinessesListing from "../../Assets/Projects/BusinessesListing.svg";
+import npmIcone from "../../Assets/Projects/npmImage.svg";
+
 
 function Projects() {
   return (
@@ -151,23 +153,23 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Nayesh}
+              imgPath={npmIcone}
               isBlog={false}
-              title="Nayesh App"
-              description="The app enables users to book services across various categories, available at either the user’s or supplier’s location (e.g., babysitting or laundry). Service providers must upload credentials for approval, except for tasks like pet sitting or hosting playgroups. A unified app serves both users and providers with tailored interfaces. Payments include a 10% app fee (e.g., $20 service + $2 fee = $22 total) and are processed via Stripe. Providers and users can seamlessly connect through the platform. Attached are logo ideas, fonts, branding colors, app design, and the."
-              ghLink="/PrivateContent"
-              // demoLink="#"
+              title="Flexible-Form-Validation"
+              description="Flexible-form-validation is a robust package for dynamic form validation in JavaScript. It supports customizable validation rules, real-time feedback, and seamless integration, making it perfect for enhancing user input validation workflows."
+              ghLink="https://github.com/vijaythaska1/flexible-form-validation.git"
+              demoLink="https://www.npmjs.com/package/flexible-form-validation"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Nayesh}
+              imgPath={npmIcone}
               isBlog={false}
-              title="Nayesh App"
-              description="The app enables users to book services across various categories, available at either the user’s or supplier’s location (e.g., babysitting or laundry). Service providers must upload credentials for approval, except for tasks like pet sitting or hosting playgroups. A unified app serves both users and providers with tailored interfaces. Payments include a 10% app fee (e.g., $20 service + $2 fee = $22 total) and are processed via Stripe. Providers and users can seamlessly connect through the platform. Attached are logo ideas, fonts, branding colors, app design, and the."
-              ghLink="/PrivateContent"
-              // demoLink="#"
+              title="File-Uploader-Express"
+              description="File-uploader-express is a lightweight Node.js package for handling file uploads in Express applications. It ensures seamless integration, customizable options, and robust functionality, making file management efficient and hassle-free."
+              ghLink="https://github.com/vijaythaska1/file-uploader-packages.git"
+              demoLink="https://www.npmjs.com/package/file-uploader-express"
             />
           </Col>
         </Row>
