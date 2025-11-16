@@ -14,6 +14,7 @@ import villagehood from "../../Assets/Projects/villagehood.png";
 import eventsGear from "../../Assets/Projects/eventsGear.png";
 import BusinessesListing from "../../Assets/Projects/BusinessesListing.svg";
 import npmIcone from "../../Assets/Projects/npmImage.svg";
+import jioinsurelogo from "../../Assets/Projects/jioinsurelogo.svg";
 
 
 function Projects() {
@@ -28,6 +29,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jioinsurelogo}
+              isBlog={false}
+              title="jioinsure"
+              description="JioInsure is a modern third-party insurance platform that connects users with trusted insurance providers, offering seamless access to a wide range of policy options. Similar to leading insurance aggregators, it simplifies the process of comparing, purchasing, and managing insurance plans — all in one place. With its secure and intuitive interface, JioInsure ensures a transparent, reliable, and user-friendly experience for both customers and partners."
+              ghLink="/PrivateContent"
+              demoLink="https://jioinsure.in/"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
