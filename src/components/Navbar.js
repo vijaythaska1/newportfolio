@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.svg";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
   AiFillStar,
@@ -12,12 +12,12 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const location = useLocation();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -29,6 +29,12 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const navLinkStyle = (path) => ({
+    color: location.pathname === path ? "#f0f4ff" : undefined,
+    background: location.pathname === path ? "rgba(108, 99, 255, 0.15)" : undefined,
+    borderRadius: "8px",
+  });
+
   return (
     <Navbar
       expanded={expand}
@@ -37,7 +43,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex" >
+        <Navbar.Brand href="/" className="d-flex align-items-center">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -53,62 +59,38 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)} style={navLinkStyle("/")}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)} style={navLinkStyle("/about")}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+              <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)} style={navLinkStyle("/project")}>
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
                 Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
+              <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)} style={navLinkStyle("/resume")}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                href=""
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Other style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
-
-            <Nav.Item className="fork-btn">
+            <Nav.Item className="fork-btn" style={{ marginLeft: "10px" }}>
               <Button
                 href="https://github.com/vijaythaska1/newportfolio.git"
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <CgGitFork style={{ fontSize: "1.1em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1em" }} />
               </Button>
             </Nav.Item>
           </Nav>

@@ -21,9 +21,10 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "10px", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, letterSpacing: "-0.3px" }}>
+              Know Who <strong className="purple">I Am</strong>
             </h1>
+            <div className="gradient-line" style={{ margin: "0 0 24px 0" }} />
             <Aboutcard />
           </Col>
           <Col
@@ -35,12 +36,14 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Professional <strong className="purple">Skillset</strong>
         </h1>
+        <div className="gradient-line" style={{ marginBottom: "10px" }} />
         <Techstack />
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">Tools</strong> I Use
         </h1>
+        <div className="gradient-line" style={{ marginBottom: "10px" }} />
         <Toolstack />
         <Github />
       </Container>
