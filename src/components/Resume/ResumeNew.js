@@ -23,17 +23,7 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <div className="resume-interactive" style={{ position: "relative" }}>
-          {/* Download Button Top */}
-          <div className="resume-download-row">
-            <a
-              href={pdf}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resume-download-btn"
-            >
-              <AiOutlineDownload /> Download Resume
-            </a>
-          </div>
+
 
           {/* ===== HEADER CARD ===== */}
           <div className="resume-header-card">
@@ -58,7 +48,7 @@ function ResumeNew() {
                 rel="noopener noreferrer"
                 className="resume-contact-item"
               >
-                <FiGithub /> github.com/vijaythaska1
+                <FiGithub /> Github
               </a>
               <a
                 href="https://www.linkedin.com/in/vijay-sharma1"
@@ -69,7 +59,7 @@ function ResumeNew() {
                 <FiLinkedin /> LinkedIn
               </a>
               <a
-                href="https://vijay-sharma-portfolio.vercel.app"
+                href="https://newportfolio-nu.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume-contact-item"

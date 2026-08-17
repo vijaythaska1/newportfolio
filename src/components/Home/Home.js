@@ -7,34 +7,38 @@ import Type from "./Type";
 
 function Home() {
   return (
-    <section>
+    <section style={{ position: "relative", overflow: "hidden" }}>
+      {/* Background Animated Ambient Blobs */}
+      <div className="hero-blob hero-blob-1"></div>
+      <div className="hero-blob hero-blob-2"></div>
+
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center">
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 15 }} className="heading hero-fade-1">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading-name hero-fade-2">
                 I'M{" "}
                 <strong className="main-name">Vijay Sharma</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: "30px 0 0 45px", textAlign: "left" }} className="hero-fade-3">
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5} style={{ paddingBottom: 20 }} className="text-center">
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
+                className="img-fluid hero-img-float hero-fade-img"
                 style={{ maxHeight: "450px" }}
               />
             </Col>

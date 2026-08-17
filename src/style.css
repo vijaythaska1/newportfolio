@@ -315,7 +315,7 @@ button:focus {
 /* --------- */
 .wave {
   animation-name: wave-animation;
-  animation-duration: 2.1s;
+  animation-duration: 3.8s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
@@ -323,7 +323,7 @@ button:focus {
 
 @keyframes wave-animation {
   0%   { transform: rotate(0deg); }
-  10%  { transform: rotate(14deg); }
+  10%  { transform: rotate(16deg); }
   20%  { transform: rotate(-8deg); }
   30%  { transform: rotate(14deg); }
   40%  { transform: rotate(-4deg); }
@@ -382,11 +382,137 @@ button:focus {
   color: var(--text-primary) !important;
 }
 
+/* Gradient Shimmer on Name */
 .main-name {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: linear-gradient(120deg, #00d4ff 0%, #6c63ff 30%, #ff6584 60%, #00d4ff 100%) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  animation: shimmerGradient 4s linear infinite !important;
+  display: inline-block !important;
+}
+
+@keyframes shimmerGradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Floating Illustration */
+.hero-img-float {
+  animation: floatIllustration 4.5s ease-in-out infinite !important;
+  will-change: transform !important;
+}
+
+@keyframes floatIllustration {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Ambient Background Blobs */
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-blob-1 {
+  width: 420px;
+  height: 420px;
+  top: 5%;
+  left: -5%;
+  background: radial-gradient(circle, #6c63ff 0%, rgba(108,99,255,0) 70%);
+  animation: blobPulse1 14s ease-in-out infinite alternate;
+}
+
+.hero-blob-2 {
+  width: 480px;
+  height: 480px;
+  bottom: 10%;
+  right: -5%;
+  background: radial-gradient(circle, #00d4ff 0%, rgba(0,212,255,0) 70%);
+  animation: blobPulse2 16s ease-in-out infinite alternate;
+}
+
+@keyframes blobPulse1 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0.2; }
+  50% { transform: translate(45px, -35px) scale(1.15) rotate(180deg); opacity: 0.38; }
+  100% { transform: translate(-30px, 30px) scale(0.9) rotate(360deg); opacity: 0.2; }
+}
+
+@keyframes blobPulse2 {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 0.2; }
+  50% { transform: translate(-55px, 45px) scale(1.2) rotate(-180deg); opacity: 0.35; }
+  100% { transform: translate(35px, -25px) scale(0.95) rotate(-360deg); opacity: 0.2; }
+}
+
+/* Staggered Fade-In on Page Load */
+.hero-fade-1 {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both !important;
+}
+
+.hero-fade-2 {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both !important;
+}
+
+.hero-fade-3 {
+  animation: heroFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both !important;
+}
+
+.hero-fade-img {
+  animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both !important;
+}
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll-Triggered Reveal Animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal.fade-left {
+  transform: translateX(-40px);
+}
+
+.scroll-reveal.fade-left.is-visible {
+  transform: translateX(0);
+}
+
+.scroll-reveal.fade-right {
+  transform: translateX(40px);
+}
+
+.scroll-reveal.fade-right.is-visible {
+  transform: translateX(0);
+}
+
+.scroll-reveal.zoom-in {
+  transform: scale(0.92);
+}
+
+.scroll-reveal.zoom-in.is-visible {
+  transform: scale(1);
 }
 
 .Typewriter__wrapper {
@@ -399,7 +525,13 @@ button:focus {
 
 .Typewriter__cursor {
   font-size: 2em !important;
-  color: var(--accent-primary) !important;
+  color: #00d4ff !important;
+  animation: blinkCursor 0.8s infinite !important;
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 @media (max-width: 767px) {
