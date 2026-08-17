@@ -1194,6 +1194,7 @@ button:focus {
   background: rgba(255,255,255,0.02);
   border: 1px solid var(--glass-border);
   transition: all var(--transition-fast);
+  text-align: left;
 }
 
 .resume-edu-item:hover {
@@ -1206,12 +1207,14 @@ button:focus {
   font-weight: 600;
   font-size: 0.95em;
   color: var(--text-primary);
+  text-align: left;
 }
 
 .resume-edu-institution {
   font-size: 0.85em;
   color: var(--text-secondary);
   margin-top: 2px;
+  text-align: left;
 }
 
 .resume-edu-year {
