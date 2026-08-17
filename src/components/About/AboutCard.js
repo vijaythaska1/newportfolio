@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
@@ -11,9 +10,10 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Vijay Sharma </span>
             from <span className="purple"> Mohali, India.</span>
             <br />
-            I am currently employed as a software developer at Cqlsys Technologies Pvt. Ltd.
+            I am a Full Stack MERN Developer with 2.9 years of professional experience,
+            currently pursuing my MCA from Glocal University.
             <br />
-            I have completed an Integrated B.Com in commerce and a BCA in computing from I.P.S Gangoh.
+            I have completed B.Com in Commerce and BCA in Computer Applications from I.P.S Gangoh.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

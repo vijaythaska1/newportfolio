@@ -6,15 +6,13 @@ import twejj from "../../Assets/Projects/twejj.svg";
 import Prayer from "../../Assets/Projects/Prayer.svg";
 import con10der from "../../Assets/Projects/con10der.png";
 import clipa from "../../Assets/Projects/clipa.png";
-import ipsGongoh from "../../Assets/Projects/ipsGongoh.png";
-import whastapp from "../../Assets/Projects/Whatsapp.png";
-import whatsappClone from "../../Assets/Projects/whatsappClone.svg";
 import Nayesh from "../../Assets/Projects/Nayesh.svg";
 import villagehood from "../../Assets/Projects/villagehood.png";
 import eventsGear from "../../Assets/Projects/eventsGear.png";
 import BusinessesListing from "../../Assets/Projects/BusinessesListing.svg";
 import npmIcone from "../../Assets/Projects/npmImage.svg";
 import jioinsurelogo from "../../Assets/Projects/jioinsurelogo.svg";
+import bimastreet from "../../Assets/Projects/bimastreet.svg";
 
 
 function Projects() {
@@ -44,12 +42,35 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={bimastreet}
+              isBlog={false}
+              title="BimaStreet"
+              description="BimaStreet is a comprehensive online insurance platform by Amaze Insurance Brokers Pvt Ltd, IRDAI approved. It connects users with top-rated insurers for Car, Health, Term, and Two-Wheeler insurance. Features include instant premium comparisons, free claim assistance, personalized insurance reports, and a seamless online purchase experience. Built with a modern tech stack, it offers a secure, transparent, and user-friendly platform for both customers and POS agents."
+              ghLink="/PrivateContent"
+              demoLink="https://bimastreet.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={clipa}
               isBlog={false}
               title="Clipa App"
               description="The Christmas Light Installation app revolutionizes the holiday decorating industry by providing a comprehensive and user-friendly platform for professionals. This innovative tool simplifies the entire process, from initial setup and subscription selection to creating detailed estimates and managing customer interactions. With features like customizable calculations, photo editing and markup, and team collaboration tools, the app empowers users to deliver precise and visually appealing estimates."
               ghLink="/PrivateContent"
-            // demoLink="#"
+              demoLink="https://apps.apple.com/in/app/clipa/id6740476941"
+              playLink="https://play.google.com/store/apps/details?id=com.app.clipa&pcampaignid=web_share"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={villagehood}
+              isBlog={false}
+              title="Villagehood App"
+              description="A community-based service marketplace that connects users with local service providers for food preparation, cleaning, yard & garden maintenance, babysitting, and wellness services. Users can discover nearby services using location-based search, view service details and hourly rates, request/book services, save favorites, and manage bookings and communication through the app."
+              ghLink="/PrivateContent"
+              playLink="https://play.google.com/store/apps/details?id=com.app.villagehood&pcampaignid=web_share"
             />
           </Col>
 
@@ -111,17 +132,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={villagehood}
-              isBlog={false}
-              title="Villagehood App"
-              description="The app allows users to view photos shared by others, search by location, or browse nearby. Users can sign up or log in to post photos and view posts with a username and location. Swiping up on photos notifies the owner, but only premium subscribers can access contact details and message others. Profiles include username, email, phone number, password, and profile picture. Subscriptions enable users to connect, ensuring privacy for contact information."
-              ghLink="/PrivateContent"
-            // demoLink="#"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={Nayesh}
               isBlog={false}
               title="Nayesh App"
@@ -154,38 +164,6 @@ function Projects() {
           </Col>
 
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={whatsappClone}
-              isBlog={false}
-              title="Whatsapp Clone : Working on This"
-              description="This WhatsApp clone is a fully functional web-based chat application featuring real-time messaging, voice calls, and video calls. Built with modern technologies, it offers a user-friendly interface, end-to-end encryption, and seamless cross-device compatibility. The app includes essential features like message delivery and read receipts, group chats, media sharing, and status updates. With smooth audio-video call integration and responsive design, it provides a reliable and secure communication experience, making it ideal for personal and professional use."
-              ghLink="https://github.com/vijaythaska1/whatsappCloneNew.git"
-              demoLink="https://phenomenal-begonia-31a41f.netlify.app"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={whastapp}
-              isBlog={false}
-              title="Chat WebApp : Working on this"
-              description="This web-based chat app, similar to WhatsApp, enables real-time messaging with a clean and user-friendly interface. It supports individual chats, message notifications, and read receipts for seamless communication. Designed with a responsive layout, it works flawlessly across devices. The app ensures fast performance, smooth navigation, and a secure environment for users. Built with modern web technologies, it is ideal for personal and professional use, offering an efficient way to stay connected online anytime, anywhere."
-              ghLink="https://github.com/vijaythaska1/whatappClone.git"
-              demoLink="https://whatapp-clone-lime.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={ipsGongoh}
-              isBlog={false}
-              title="IPS Gongoh College Website"
-              description="This college website, built using React, webpack, and Vite, offers a user-friendly and responsive design. It features detailed information about courses, faculty, events, and campus facilities, ensuring seamless navigation. An integrated admin panel allows efficient content management. The site is optimized for accessibility, mobile compatibility, and fast load times. Its sleek and modern interface enhances the user experience, providing a professional platform for students, faculty, and administrators to access essential college information.."
-              ghLink="https://github.com/vijaythaska1/College-web-Site.git"
-              demoLink="https://college-web-site-q9ty.vercel.app/"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>

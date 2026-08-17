@@ -3,8 +3,11 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaApple, FaGooglePlay } from "react-icons/fa";
 
 function ProjectCards(props) {
+  const isAppStore = props.demoLink && props.demoLink.includes("apps.apple.com");
+
   return (
     <Card className="project-card-view">
       <div style={{
@@ -40,16 +43,12 @@ function ProjectCards(props) {
           textAlign: "left",
           color: "#8892b0",
           fontSize: "0.85rem",
-          lineHeight: 1.7,
-          flex: 1,
-          display: "-webkit-box",
-          WebkitLineClamp: 4,
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden"
+          lineHeight: 1.6,
+          marginBottom: "16px"
         }}>
           {props.description}
         </Card.Text>
-        <div style={{ marginTop: "16px", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+        <div style={{ marginTop: "auto", display: "flex", gap: "8px", flexWrap: "wrap", paddingTop: "12px" }}>
           <Button
             variant="primary"
             href={props.ghLink}
@@ -69,14 +68,34 @@ function ProjectCards(props) {
                 alignItems: "center",
                 gap: "6px",
                 fontSize: "0.82rem",
-                background: "rgba(0, 212, 255, 0.15)",
-                border: "1px solid rgba(0, 212, 255, 0.4)",
-                color: "#00d4ff",
+                background: isAppStore ? "rgba(255, 255, 255, 0.12)" : "rgba(0, 212, 255, 0.15)",
+                border: isAppStore ? "1px solid rgba(255, 255, 255, 0.3)" : "1px solid rgba(0, 212, 255, 0.4)",
+                color: isAppStore ? "#ffffff" : "#00d4ff",
                 boxShadow: "none"
               }}
             >
-              <CgWebsite size={14} />
-              Live Demo
+              {isAppStore ? <FaApple size={15} /> : <CgWebsite size={14} />}
+              {isAppStore ? "App Store" : "Live Demo"}
+            </Button>
+          )}
+          {props.playLink && (
+            <Button
+              variant="primary"
+              href={props.playLink}
+              target="_blank"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
+                fontSize: "0.82rem",
+                background: "rgba(0, 230, 118, 0.15)",
+                border: "1px solid rgba(0, 230, 118, 0.4)",
+                color: "#00e676",
+                boxShadow: "none"
+              }}
+            >
+              <FaGooglePlay size={13} />
+              Play Store
             </Button>
           )}
         </div>
