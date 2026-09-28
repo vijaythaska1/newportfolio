@@ -10,7 +10,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Vijay Sharma </span>
             from <span className="purple"> Mohali, India.</span>
             <br />
-            I am a Full Stack MERN Developer with 2.9 years of professional experience,
+            I am a Full Stack MERN Developer with 3+ years of professional experience,
             currently pursuing my MCA from Glocal University.
             <br />
             I have completed B.Com in Commerce and BCA in Computer Applications from I.P.S Gangoh.

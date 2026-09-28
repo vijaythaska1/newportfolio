@@ -75,7 +75,7 @@ function ResumeNew() {
               <FiUser /> Professional Summary
             </div>
             <p className="resume-summary-text">
-              MERN Stack Developer with <strong>2.9+ years</strong> of experience
+              MERN Stack Developer with <strong>3+ years</strong> of experience
               building scalable web applications, REsST APIs, ERP systems, and admin
               panels across startup, product, and service-based environments. Skilled in
               React.js, Next.js, Node.js, MongoDB, and TypeScript, with a strong focus
@@ -163,7 +163,7 @@ function ResumeNew() {
                     </div>
                   </div>
                   <span className="resume-timeline-date">
-                    Feb 2025 – Apr 2026
+                    Feb 2025 – Present
                   </span>
                 </div>
                 <ul className="resume-timeline-bullets">
