@@ -163,7 +163,7 @@ function ResumeNew() {
                     </div>
                   </div>
                   <span className="resume-timeline-date">
-                    Feb 2025 – Present
+                    Feb 2025 – Oct 2026
                   </span>
                 </div>
                 <ul className="resume-timeline-bullets">
